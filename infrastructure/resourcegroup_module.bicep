@@ -5,6 +5,7 @@ param connections_azureblob_name string = 'azureblob'
 param location string = 'eastus'
 
 var contentshare_name = 'functioncontentshare'
+// for same input of uniqueString, the output is always the same (like a hash function)
 var cosmosdb_name = 'fh-clc3-cosmosdb-${uniqueString(resourceGroup().id)}'
 
 /*
